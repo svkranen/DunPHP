@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /serveruri/service/
+
+RewriteRule ^.*Resources/Public/(.*)$ /service/resource.php?$1 [L,QSA]
+
+</IfModule>
