@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteBase /service/
+	
+	RewriteRule ^Resources/Public/.*$ - [L]
+	RewriteRule ^Classes/API/.*$ - [L]
+	RewriteRule ^service/Resources/Public/.*$ - [L]
+	RewriteRule .* route.php [L]
+	
+</IfModule>
